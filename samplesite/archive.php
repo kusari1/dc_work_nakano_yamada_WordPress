@@ -7,48 +7,33 @@
                     <dl>
                         <dt>2020-08-04</dt>
                         <dd>
-                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
+                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg"></div>
                             <div class="b_right"><a href="sample.html">社長通信</a></div>
                         </dd>
                         <dt>2020-08-02</dt>
                         <dd>
-                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
+                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg"></div>
                             <div class="b_right"><a href="sample.html">社員紹介</a></div>
                         </dd>
                         <dt>2020-08-01</dt>
                         <dd>
-                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
+                            <div class="b_img"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg"></div>
                             <div class="b_right"><a href="sample.html">セミナー開催報告</a></div>
                         </dd>
                     </dl>
                 </div>
-                <div class="information">
-                    <h2>INFORMATION</h2>
-                    <dl>
-                        <dt>2020-08-01</dt>
-                        <dd>
-                        <span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="sample.html">夏季休暇のお知らせを掲載しました</a></dd>
-                        <dt>2020-07-29</dt>
-                        <dd>
-                        <span class="tab tag_release">プレスリリース</span>
-                        <a href="sample.html">新サービスのお知らせを掲載しました</a></dd>
-                        <dt>2020-07-23</dt>
-                        <dd>
-                        <span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="sample.html">雑誌掲載情報を掲載しました</a></dd>
-                        <dt>2020-07-20</dt>
-                        <dd>
-                        <span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="sample.html">雑誌掲載情報を掲載しました</a></dd>
-                        <dt>2020-07-17</dt>
-                        <dd>
-                        <span class="tab tag_release">プレスリリース</span>
-                        <a href="sample.html">新サービスのお知らせを掲載しました</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <?php get_sidebar(); ?>
-        </div>
+    <div class="information">
+     <h2>INFORMATION</h2>
+     <dl>
+     	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <dt><?php the_time('Y-m-d'); ?></dt?>
+            <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>"> <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?> </span>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を掲載しました。</dd>
+        <?php endwhile; endif; ?>
+     </dl>
+    </div>
+    </div>
+    <?php get_sidebar(); ?>
+    </div>
     </div>
     <?php get_footer(); ?>	
