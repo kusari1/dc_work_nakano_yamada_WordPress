@@ -4,8 +4,8 @@
             <li></li>
             <li></li>
         </ul>
-         <div class="s-prev"><img src="images/nav_prev.png" alt="前へ"></div>
-         <div class="s-next"><img src="images/nav_next.png" alt="次へ"></div>
+         <div class="s-prev"><img src="<?php echo get_template_directory_uri(); ?>/images/nav_prev.png" alt="前へ"></div>
+         <div class="s-next"><img src="<?php echo get_template_directory_uri(); ?>/images/nav_next.png" alt="次へ"></div>
          <div class="cont-nav"></div>
     </div>
     <div class="container">
@@ -13,13 +13,13 @@
             <div class="top-nav">
                 <div class="top-navColumn top-navColumn_left">
                     <h2>SERVICE</h2>
-                    <div class="top-navPhoto"><a href="service.html"><img src="images/photo02.jpg" alt="" width="460" /></a></div>
+                    <div class="top-navPhoto"><a href="service.html"><img src="<?php echo get_template_directory_uri(); ?>/images/photo02.jpg" alt="" width="460" /></a></div>
                     <p>弊社のサービスをご紹介します。</p>
                     <p class="top-navDetail"><a href="service.html">MORE</a></p>
                 </div>
                 <div class="top-navColumn top-navColumn_right">
                     <h2>COMPANY</h2>
-                    <div class="top-navPhoto"><a href="company.html"><img src="images/photo03.jpg" alt=""  width="460" /></a></div>
+                    <div class="top-navPhoto"><a href="company.html"><img src="<?php echo get_template_directory_uri(); ?>/images/photo03.jpg" alt=""  width="460" /></a></div>
                     <p>会社情報をご紹介します。</p>
                     <p class="top-navDetail"><a href="company.html">MORE</a></p>
                 </div>
@@ -54,7 +54,7 @@
                         <dt>2020-08-04</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
                         <a href="sample.html">社長通信</a>
@@ -63,7 +63,7 @@
                         <dt>2020-08-02</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
                         <a href="sample.html">社員紹介</a>
@@ -72,7 +72,7 @@
                         <dt>2020-08-01</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
                         <a href="sample.html">セミナー開催報告</a>

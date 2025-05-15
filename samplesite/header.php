@@ -23,15 +23,15 @@ $(function() {
 <body>
     <header>
         <div class="container">
-            <h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE" /></a></h1>
+            <h1><a href="index.html"><img src="	<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1>
             <div id="menu">
                 <ul>
                     <li class="home"><a href="index.html">TOP</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="service.html">サービス概要</a></li>
-                    <li><a href="archive-news.html">プレスリリース</a></li>
-                    <li><a href="archive-news.html">ブログ</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="<?php echo home_url(); ?>/company/">会社概要</a></li>
+                    <li><a href="<?php echo home_url(); ?>/service/">サービス概要</a></li>
+                    <li><a href="<?php echo home_url(); ?>/archive-news/">プレスリリース</a></li>
+                    <li><a href="<?php echo home_url(); ?>/archive-news/">ブログ</a></li>
+                    <li><a href="<?php echo home_url(); ?>/contact/">お問い合わせ</a></li>
                 </ul>
             </div>
         </div>
