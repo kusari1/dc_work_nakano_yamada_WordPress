@@ -1,3 +1,4 @@
+    <?php get_header(); ?>
     <div id="slide">
         <ul class="slide-inner">
             <li></li>
@@ -81,6 +82,8 @@
 
                     </dl>
                 </div>
-            </div>       
+            </div>
+            <?php get_sidebar(); ?>  
         </div>
     </div>
+    <?php get_footer(); ?>	

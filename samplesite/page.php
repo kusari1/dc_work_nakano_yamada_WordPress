@@ -1,4 +1,5 @@
-    <div id="cont_first" class="container">
+    <?php get_header(); ?>
+		<div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
             <h2>サービス概要</h2>
@@ -10,5 +11,7 @@
 			<div class="service_img"><img src="images/service02.jpeg"></div>
 			<a href="contact.html"><button class="btn1">お問い合わせ</button></a>
 	        </div>
+					<?php get_sidebar(); ?>
         </div>
     </div>
+		<?php get_footer(); ?>	

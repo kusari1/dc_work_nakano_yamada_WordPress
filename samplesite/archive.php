@@ -1,3 +1,4 @@
+    <?php get_header(); ?>
     <div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
@@ -47,5 +48,7 @@
                     </dl>
                 </div>
             </div>
+            <?php get_sidebar(); ?>
         </div>
     </div>
+    <?php get_footer(); ?>	
