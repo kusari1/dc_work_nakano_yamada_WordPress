@@ -1,49 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-$(function() {
-    $('#slide').slideshow({
-        autoSlide    : true,
-        effect       : 'fade',
-        type         : 'repeat',
-        interval     : 2000,
-        duration     : 500,
-        imgHoverStop : true,
-        navHoverStop : true
-    });
-});
-</script>
-<title>SAMPLE SITE</title>
- <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE" /></a></h1>
-            <div id="menu">
-                <ul>
-                    <li class="home"><a href="index.html">TOP</a></li>
-                    <li><a href="company.html">会社概要</a></li>
-                    <li><a href="service.html">サービス概要</a></li>
-                    <li><a href="archive-news.html">プレスリリース</a></li>
-                    <li><a href="archive-news.html">ブログ</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <?php get_header(); ?>
     <div id="slide">
         <ul class="slide-inner">
             <li></li>
             <li></li>
             <li></li>
         </ul>
-         <div class="s-prev"><img src="images/nav_prev.png" alt="前へ"></div>
-         <div class="s-next"><img src="images/nav_next.png" alt="次へ"></div>
+         <div class="s-prev"><img src="<?php echo get_template_directory_uri(); ?>/images/nav_prev.png" alt="前へ"></div>
+         <div class="s-next"><img src="<?php echo get_template_directory_uri(); ?>/images/nav_next.png" alt="次へ"></div>
          <div class="cont-nav"></div>
     </div>
     <div class="container">
@@ -51,15 +14,15 @@ $(function() {
             <div class="top-nav">
                 <div class="top-navColumn top-navColumn_left">
                     <h2>SERVICE</h2>
-                    <div class="top-navPhoto"><a href="service.html"><img src="images/photo02.jpg" alt="" width="460" /></a></div>
+                    <div class="top-navPhoto"><a href="<?php echo home_url(); ?>/service/"><img src="<?php echo get_template_directory_uri(); ?>/images/photo02.jpg" alt="" width="460" /></a></div>
                     <p>弊社のサービスをご紹介します。</p>
-                    <p class="top-navDetail"><a href="service.html">MORE</a></p>
+                    <p class="top-navDetail"><a href="<?php echo home_url(); ?>/service/">MORE</a></p>
                 </div>
                 <div class="top-navColumn top-navColumn_right">
                     <h2>COMPANY</h2>
-                    <div class="top-navPhoto"><a href="company.html"><img src="images/photo03.jpg" alt=""  width="460" /></a></div>
+                    <div class="top-navPhoto"><a href="<?php echo home_url(); ?>/company/"><img src="<?php echo get_template_directory_uri(); ?>/images/photo03.jpg" alt=""  width="460" /></a></div>
                     <p>会社情報をご紹介します。</p>
-                    <p class="top-navDetail"><a href="company.html">MORE</a></p>
+                    <p class="top-navDetail"><a href="<?php echo home_url(); ?>/company/">MORE</a></p>
                 </div>
             </div>
             <div id="cont_left">
@@ -69,19 +32,19 @@ $(function() {
                         <dt>2020-08-01</dt>
                         <dd>
                         <span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="single.html">夏季休暇のお知らせを掲載しました</a></dd>
+                        <a href="<?php echo home_url(); ?>/single/">夏季休暇のお知らせを掲載しました</a></dd>
                         <dt>2020-07-29</dt>
                         <dd>
     					<span class="tab tag_release">プレスリリース</span>
-                        <a href="sample.html">新サービスのお知らせを掲載しました</a></dd>
+                        <a href="<?php echo home_url(); ?>/sample/">新サービスのお知らせを掲載しました</a></dd>
                         <dt>2020-07-23</dt>
                         <dd>
     					<span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="sample.html">雑誌掲載情報を掲載しました</a></dd>
+                        <a href="<?php echo home_url(); ?>/sample/">雑誌掲載情報を掲載しました</a></dd>
                         <dt>2020-07-20</dt>
                         <dd>
                         <span class="tab tag_gyoumu">お知らせ</span>
-                        <a href="sample.html">雑誌掲載情報を掲載しました</a></dd>
+                        <a href="<?php echo home_url(); ?>/sample/">雑誌掲載情報を掲載しました</a></dd>
                     </dl>
                 </div>
 
@@ -92,25 +55,25 @@ $(function() {
                         <dt>2020-08-04</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
-                        <a href="sample.html">社長通信</a>
+                        <a href="<?php echo home_url(); ?>/sample/">社長通信</a>
                          </div></dd>
 
                         <dt>2020-08-02</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
-                        <a href="sample.html">社員紹介</a>
+                        <a href="<?php echo home_url(); ?>/sampl">社員紹介</a>
                          </div></dd>
 
                         <dt>2020-08-01</dt>
                         <dd>
                         <div class="b_img">
-    	                    <img src="images/sample.jpg">
+    	                    <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
                         </div>
                          <div class="b_right">
                         <a href="sample.html">セミナー開催報告</a>
@@ -119,32 +82,8 @@ $(function() {
 
                     </dl>
                 </div>
-            </div>       
-            <div id="cont_right">
-                <div class="sub-menu">
-                    <h3>SERVICE</h3>
-                    <h4>Web事業</h4>
-                    <ul>
-                        <li><a href="service.html#s1">ホームページ制作</a></li>
-                        <li><a href="service.html#s2">エンジニア派遣</a></li>
-                    </ul>
-                </div>
-            </div>
+            </div>  
+            <?php get_sidebar(); ?>     
         </div>
     </div>
-    <footer>
-        <ul>
-            <li class="home"><a href="index.html">TOP</a></li>
-            <li><a href="service.html">SERVICE</a></li>
-            <li><a href="company.html">COMPANY</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-        <div id="footer">
-            <div class="copyright">Copyright &copy; 2020 SAMPLE SITE All Rights Reserved.</div>
-        </div>
-    </footer>
-    <div id="pageTop">
-        <a href="#">PAGE TOP</a>
-    </div>
-</body>
-</html>
+    <?php get_footer(); ?>

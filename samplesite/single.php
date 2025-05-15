@@ -1,5 +1,5 @@
-    <?php get_header(); ?>
-    <div id="cont_first" class="container">
+<?php get_header(); ?>	
+<div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
             <p>2020/08/01</p>
@@ -9,4 +9,4 @@
             <?php get_sidebar(); ?>
         </div>
     </div>
-    <?php get_footer(); ?>	
+    <?php get_footer(); ?>
