@@ -387,9 +387,9 @@ header h1 a:hover {
     background:none;
 }
 
-.top-navDetail {
+/* .top-navDetail {
 
-}
+} */
 .top-navDetail a {
     font-size: 18px;
     background: #1a445d;
@@ -423,9 +423,9 @@ header h1 a:hover {
     border-bottom: 1px dashed #ddd;
 }
 
-
+/* 
 .sub-menu {
-}
+} */
 
 .sub-menu h3 {
     border:none;
@@ -549,6 +549,12 @@ footer li a:hover {
     background:#538ac7;
     color: #fff;
 }
+
+.tag_news{
+    background:#a453c7;
+    color: #fff;
+}
+
 .information dd:after{
     display: block;
     clear: both;
