@@ -48,6 +48,7 @@
                         <dd>
                             <div class="b_img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg">
+                                <?php the_post_thumbnail('thumbside'); ?>
                             </div>
                             <div class="b_right">
                                 <a href="<?php echo home_url(); ?>/sample/">社長通信</a>

@@ -28,6 +28,12 @@ $(function() {
 </head>
 <body>
     <header>
+        <div class="">
+            <?php if(function_exists('bcn_display'))
+            {
+            bcn_display();
+            }?>
+        </div>
         <div class="container">
             <h1><a href="<?php echo home_url(); ?>/index/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1>
         <div id="menu">

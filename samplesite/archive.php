@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php wp_pagenavi(); ?>
 <div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
