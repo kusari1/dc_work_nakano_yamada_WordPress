@@ -18,9 +18,9 @@
                         <?php endwhile; endif; ?>
                     </dl>
                 </div>
-                <?php wp_pagenavi(); ?>
             </div>
             <?php get_sidebar(); ?>
+            <?php wp_pagenavi(); ?>
         </div>
     </div>
     <?php get_footer(); ?>	

@@ -590,10 +590,10 @@ footer li a:hover {
 }
 /* WP化に伴う追加css------------- */
 .bread_list{
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 .wp-pagenavi{
-    margin: 120px 0px 20px 0;
+    margin: 20px 0px 20px 0;
 }
 
 /* WP化に伴う追加css-------------end */
