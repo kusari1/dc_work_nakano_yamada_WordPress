@@ -3,27 +3,31 @@
 ?>
 <?php get_header(); ?>
     <div id="cont_first" class="container">
+        <div class="">
+            <?php if(function_exists('bcn_display'))
+            {
+            bcn_display();
+            }?>
+        </div>
         <div id="contents">
             <div id="cont_left">
                 <h2>会社概要</h2>
                 <table>
     	            <tr>
     					<th>会社名</th>
-    		            <td>Sample site</td>
+    		            <td><?php the_field('add_company'); ?></td>
     	            </tr>
                     <tr>
                         <th>本社</th>
-                        <td>〒000-0000<br>
-                            東京都架空区1-2-3-4-5
-                        </td>
+                        <td><?php the_field('add_head-office'); ?></td>
                     </tr>
                     <tr>
                         <th>設立</th>
-                        <td>2015年1月1日</td>
+                        <td><?php the_field('add_Establishment'); ?></td>
                     </tr>
                     <tr>
                         <th>資本金</th>
-                        <td>2000万円 （2020年3月31日現在）</td>
+                        <td><?php the_field('add_capital'); ?></td>
                     </tr>
                     <tr>
                         <th>従業員数</th>
@@ -35,7 +39,7 @@
                     </tr>
     	            <tr>
     					<th>代表者</th>
-    		            <td>サンプル太郎</td>
+    		            <td><?php the_field('add_ceo'); ?></td>
     	            </tr>
                 </table>
             </div>
