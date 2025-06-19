@@ -21,8 +21,8 @@
                   </dl>
                 </div>
             </div>
+            <?php get_sidebar(); ?>
             <?php wp_pagenavi(); ?>
-            <?php get_sidebar(); ?>   
         </div>
     </div>
 <?php get_footer(); ?>
